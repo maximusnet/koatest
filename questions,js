@@ -1,0 +1,8 @@
+   let promise = Promise(resolve => {
+        setTimeout(resolve("GOOD"), ms);
+    });
+no delay
+
+ let promise = Promise(resolve => {
+        setTimeout(()=>resolve("GOOD"), ms);
+    });
